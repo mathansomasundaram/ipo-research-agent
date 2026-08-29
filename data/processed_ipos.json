@@ -1,3 +1,12 @@
 {
-  "processed": {}
+  "processed": {
+    "purple-style-labs-limited_2026-08-31": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-08-29T16:50:24.757952+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "966b62d484c7c8925868b4f5f0cd85acb267f2813d517ea0ef7dafb5163e8279",
+      "report_file": "2026-08-31_purple-style-labs-limited.pdf"
+    }
+  }
 }
