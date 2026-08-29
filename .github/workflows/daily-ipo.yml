@@ -1,0 +1,94 @@
+name: Daily IPO Analysis
+
+on:
+  schedule:
+    # 18:00 IST (6 PM) = 12:30 UTC. GitHub cron uses UTC.
+    - cron: "30 12 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Generate reports without emailing or marking them sent"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-ipo-analysis
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    env:
+      IPO_PROVIDER: ${{ vars.IPO_PROVIDER || 'auto' }}
+      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openrouter/free' }}
+      OPENROUTER_TEMPERATURE: ${{ vars.OPENROUTER_TEMPERATURE || '0.1' }}
+      OPENROUTER_MAX_TOKENS: ${{ vars.OPENROUTER_MAX_TOKENS || '8000' }}
+      OPENROUTER_REASONING_EFFORT: ${{ vars.OPENROUTER_REASONING_EFFORT || 'low' }}
+      OPENROUTER_REASONING_MAX_TOKENS: ${{ vars.OPENROUTER_REASONING_MAX_TOKENS || '1024' }}
+      PROCESSED_RETENTION_DAYS: "15"
+      ARTIFACT_RETENTION_DAYS: "15"
+      NEWS_LOOKBACK_DAYS: ${{ vars.NEWS_LOOKBACK_DAYS || '730' }}
+      NEWS_MAX_EVENTS: ${{ vars.NEWS_MAX_EVENTS || '10' }}
+
+      IPO_GURU_API_KEY: ${{ secrets.IPO_GURU_API_KEY }}
+      UPSTOX_ACCESS_TOKEN: ${{ secrets.UPSTOX_ACCESS_TOKEN }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+      EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+      EMAIL_TO: ${{ secrets.EMAIL_TO }}
+      FAILURE_TO: ${{ secrets.FAILURE_TO }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install PDF runtime libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libpango-1.0-0 libpangoft2-1.0-0 fonts-dejavu-core
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: python -m pytest -q
+
+      - name: Run IPO pipeline
+        env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || 'false' }}
+        run: python -m src.main
+
+      - name: Upload generated reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ipo-reports-${{ github.run_id }}
+          path: reports/*.pdf
+          if-no-files-found: ignore
+          retention-days: 15
+
+      - name: Persist short-lived state and holiday cache
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed_ipos.json
+          find data -maxdepth 1 -name 'nse_holidays_*.json' -print0 | xargs -0 -r git add --
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update IPO agent runtime state"
+            git push
+          fi

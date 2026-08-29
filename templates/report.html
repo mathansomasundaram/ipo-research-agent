@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    @page {
+      size: A4;
+      margin: 16mm 16mm 18mm 16mm;
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+        font-size: 8.5pt;
+        color: #64748b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "DejaVu Sans", Arial, sans-serif;
+      color: #172033;
+      font-size: 10.2pt;
+      line-height: 1.48;
+      margin: 0;
+    }
+    h1, h2, h3 { margin: 0; color: #0f172a; }
+    h1 { font-size: 24pt; line-height: 1.15; }
+    h2 {
+      font-size: 15pt;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #dbe4ef;
+    }
+    h3 { font-size: 11.5pt; margin: 12px 0 5px; }
+    p { margin: 5px 0 9px; }
+    ul { margin: 5px 0 10px 18px; padding: 0; }
+    li { margin: 3px 0; }
+    .muted { color: #64748b; }
+    .small { font-size: 8.8pt; }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: #64748b;
+      margin-bottom: 6px;
+    }
+    .hero {
+      padding: 2px 0 14px;
+      border-bottom: 2px solid #dbe4ef;
+      margin-bottom: 14px;
+    }
+    .meta {
+      margin-top: 8px;
+      color: #64748b;
+      font-size: 9pt;
+    }
+    .verdict {
+      margin: 10px 0 12px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+      break-inside: avoid;
+    }
+    .verdict.apply { border-left: 5px solid #16803b; }
+    .verdict.deep-analyse { border-left: 5px solid #b7791f; }
+    .verdict.ignore { border-left: 5px solid #b42318; }
+    .verdict-label { font-size: 8pt; font-weight: 700; color: #64748b; text-transform: uppercase; }
+    .verdict-value { font-size: 16pt; font-weight: 800; margin: 0 0 1px; }
+    .confidence { font-size: 8.5pt; color: #475569; }
+    .grid-2 { display: table; width: 100%; border-spacing: 10px 0; margin-left: -10px; margin-right: -10px; }
+    .grid-2 > div { display: table-cell; width: 50%; vertical-align: top; }
+    .callout {
+      border: 1px solid #dbe4ef;
+      border-radius: 7px;
+      padding: 11px 12px;
+      background: #fbfdff;
+      break-inside: avoid;
+    }
+    .callout-title { font-size: 8.5pt; text-transform: uppercase; letter-spacing: .04em; color: #64748b; font-weight: 700; }
+    .callout strong { display: block; margin-top: 4px; font-size: 10.2pt; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 14px;
+      font-size: 9.2pt;
+      break-inside: avoid;
+    }
+    thead { display: table-header-group; }
+    th {
+      text-align: left;
+      padding: 7px 8px;
+      background: #eef3f8;
+      color: #334155;
+      border: 1px solid #d8e0e9;
+      font-weight: 700;
+    }
+    td {
+      padding: 7px 8px;
+      border: 1px solid #d8e0e9;
+      vertical-align: middle;
+    }
+    .score-label { width: 39%; color: #475569; }
+    .score-value { font-weight: 700; }
+    .section { break-inside: auto; }
+    .section-summary { font-size: 10.2pt; }
+    .evidence {
+      color: #64748b;
+      font-size: 8.2pt;
+      margin-top: 4px;
+    }
+    .risk {
+      padding: 9px 11px;
+      margin: 8px 0;
+      border-left: 4px solid #d97706;
+      background: #fffaf0;
+      break-inside: avoid;
+    }
+    .risk.high, .risk.critical { border-left-color: #b42318; background: #fff6f5; }
+    .risk.low { border-left-color: #4b5563; background: #f8fafc; }
+    .pros-cons { width: 100%; border-spacing: 10px 0; display: table; margin: 8px -10px 12px; }
+    .pros-cons > div { width: 50%; display: table-cell; vertical-align: top; }
+    .list-box { border: 1px solid #dbe4ef; border-radius: 7px; padding: 10px 12px; }
+    .page-break { page-break-before: always; }
+    .sources { font-size: 8.5pt; }
+    .source-row { margin: 5px 0 8px; overflow-wrap: anywhere; }
+    .source-link { color: #1d4ed8; text-decoration: underline; }
+    .evidence-text {
+      white-space: pre-wrap;
+      font-size: 8.3pt;
+      line-height: 1.38;
+      color: #334155;
+      border-left: 3px solid #dbe4ef;
+      padding-left: 9px;
+      margin: 6px 0 14px;
+    }
+    .metric-table td:first-child { width: 42%; color: #475569; }
+    .news-item {
+      margin: 7px 0 10px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #edf2f7;
+    }
+    .disclaimer {
+      margin-top: 18px;
+      border-top: 1px solid #cbd5e1;
+      padding-top: 9px;
+      color: #64748b;
+      font-size: 8.5pt;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="eyebrow">IPO Research Report</div>
+    <h1>{{ analysis.company_name }}</h1>
+    <div class="meta">
+      Opens: {{ evidence.ipo.open_date }}
+      {% if evidence.ipo.close_date %} | Closes: {{ evidence.ipo.close_date }}{% endif %}
+      {% if evidence.ipo.price_min or evidence.ipo.price_max %}
+        | Price band: Rs. {{ evidence.ipo.price_min or evidence.ipo.price_max }}{% if evidence.ipo.price_min != evidence.ipo.price_max %} - {{ evidence.ipo.price_max }}{% endif %}
+      {% endif %}
+      {% if evidence.ipo.issue_size_cr %} | Issue size: Rs. {{ "%.2f"|format(evidence.ipo.issue_size_cr) }} Cr{% endif %}
+    </div>
+  </section>
+
+  {% set verdict_class = analysis.verdict.value|lower|replace(' ', '-') %}
+  <section class="verdict {{ verdict_class }}">
+    <div class="verdict-label">Verdict</div>
+    <div class="verdict-value">{{ analysis.verdict.value }}</div>
+    <div class="confidence">Confidence: {{ analysis.confidence.value }}</div>
+  </section>
+
+  <h2>Why?</h2>
+  <ul>
+    {% for reason in analysis.verdict_reasons %}<li>{{ reason }}</li>{% endfor %}
+  </ul>
+
+  <h2>Quick Scorecard</h2>
+  <table>
+    <tbody>
+      <tr><td class="score-label">Business Quality</td><td class="score-value">{{ analysis.scorecard.business_quality }}</td></tr>
+      <tr><td class="score-label">Financial Health</td><td class="score-value">{{ analysis.scorecard.financial_health }}</td></tr>
+      <tr><td class="score-label">Management</td><td class="score-value">{{ analysis.scorecard.management }}</td></tr>
+      <tr><td class="score-label">Growth Visibility</td><td class="score-value">{{ analysis.scorecard.growth_visibility }}</td></tr>
+      <tr><td class="score-label">IPO Structure</td><td class="score-value">{{ analysis.scorecard.ipo_structure }}</td></tr>
+      <tr><td class="score-label">Valuation</td><td class="score-value">{{ analysis.scorecard.valuation }}</td></tr>
+      <tr><td class="score-label">Market Sentiment</td><td class="score-value">{{ analysis.scorecard.market_sentiment }}</td></tr>
+      <tr><td class="score-label">Overall Risk</td><td class="score-value">{{ analysis.scorecard.overall_risk }}</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-break"></div>
+
+  <div class="grid-2">
+    <div>
+      <div class="callout">
+        <div class="callout-title">Biggest reason to consider</div>
+        <strong>{{ analysis.biggest_reason_to_consider }}</strong>
+      </div>
+    </div>
+    <div>
+      <div class="callout">
+        <div class="callout-title">Biggest reason to be careful</div>
+        <strong>{{ analysis.biggest_reason_to_be_careful }}</strong>
+      </div>
+    </div>
+  </div>
+  <div class="callout" style="margin-top:10px;">
+    <div class="callout-title">What could change this verdict?</div>
+    <strong>{{ analysis.what_could_change_verdict }}</strong>
+  </div>
+
+  {% for section in sections %}
+  <section class="section">
+    <h2>{{ section.title }}</h2>
+    <p class="section-summary">{{ section.summary }}</p>
+    {% if section.key_points %}
+    <ul>
+      {% for point in section.key_points %}<li>{{ point }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if section.evidence_ids %}
+      <div class="evidence">Evidence: {{ section.evidence_ids|join(', ') }}</div>
+    {% endif %}
+  </section>
+  {% endfor %}
+
+  {% if analysis.red_flags %}
+  <h2>Important Red Flags</h2>
+  {% for flag in analysis.red_flags %}
+    <div class="risk {{ flag.concern_level.value|lower }}">
+      <strong>{{ flag.issue }} - {{ flag.concern_level.value }}</strong>
+      <div><b>Evidence:</b> {{ flag.evidence }}</div>
+      <div><b>Why it matters:</b> {{ flag.why_it_matters }}</div>
+      {% if flag.evidence_ids %}<div class="evidence">Evidence: {{ flag.evidence_ids|join(', ') }}</div>{% endif %}
+    </div>
+  {% endfor %}
+  {% endif %}
+
+  {% if analysis.risks %}
+  <h2>Top Risks</h2>
+  {% for risk in analysis.risks %}
+    <div class="risk {{ risk.concern_level.value|lower }}">
+      <strong>{{ risk.title }} - {{ risk.concern_level.value }}</strong>
+      <div>{{ risk.explanation }}</div>
+      {% if risk.evidence_ids %}<div class="evidence">Evidence: {{ risk.evidence_ids|join(', ') }}</div>{% endif %}
+    </div>
+  {% endfor %}
+  {% endif %}
+
+  <div class="pros-cons">
+    <div>
+      <div class="list-box">
+        <h3>Pros</h3>
+        <ul>{% for item in analysis.pros %}<li>{{ item }}</li>{% endfor %}</ul>
+      </div>
+    </div>
+    <div>
+      <div class="list-box">
+        <h3>Cons</h3>
+        <ul>{% for item in analysis.cons %}<li>{{ item }}</li>{% endfor %}</ul>
+      </div>
+    </div>
+  </div>
+
+  {% if data_gaps %}
+  <h2>Data Gaps</h2>
+  <ul>
+    {% for item in data_gaps %}<li>{{ item }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  <h2>Final Summary</h2>
+  <p>{{ analysis.final_summary }}</p>
+
+  <div class="page-break"></div>
+
+  <h2>Detailed Evidence Appendix</h2>
+
+  <h3>Issue Details</h3>
+  <table class="metric-table">
+    <tbody>
+      <tr><td>Company</td><td>{{ evidence.ipo.name }}</td></tr>
+      {% if evidence.ipo.symbol %}<tr><td>Symbol</td><td>{{ evidence.ipo.symbol }}</td></tr>{% endif %}
+      <tr><td>Provider</td><td>{{ evidence.ipo.provider }}</td></tr>
+      <tr><td>Issue type</td><td>{{ evidence.ipo.issue_type }}</td></tr>
+      {% if evidence.ipo.industry %}<tr><td>Industry</td><td>{{ evidence.ipo.industry }}</td></tr>{% endif %}
+      <tr><td>Open date</td><td>{{ evidence.ipo.open_date }}</td></tr>
+      {% if evidence.ipo.close_date %}<tr><td>Close date</td><td>{{ evidence.ipo.close_date }}</td></tr>{% endif %}
+      {% if evidence.ipo.listing_date %}<tr><td>Listing date</td><td>{{ evidence.ipo.listing_date }}</td></tr>{% endif %}
+      {% if evidence.ipo.price_min or evidence.ipo.price_max %}<tr><td>Price band</td><td>Rs. {{ evidence.ipo.price_min or evidence.ipo.price_max }}{% if evidence.ipo.price_min != evidence.ipo.price_max %} - {{ evidence.ipo.price_max }}{% endif %}</td></tr>{% endif %}
+      {% if evidence.ipo.lot_size %}<tr><td>Lot size</td><td>{{ evidence.ipo.lot_size }}</td></tr>{% endif %}
+      {% if evidence.ipo.issue_size_cr %}<tr><td>Issue size</td><td>Rs. {{ "%.2f"|format(evidence.ipo.issue_size_cr) }} Cr</td></tr>{% endif %}
+      {% if evidence.ipo.fresh_issue_cr %}<tr><td>Fresh issue</td><td>Rs. {{ "%.2f"|format(evidence.ipo.fresh_issue_cr) }} Cr</td></tr>{% endif %}
+      {% if evidence.ipo.ofs_cr %}<tr><td>Offer for Sale</td><td>Rs. {{ "%.2f"|format(evidence.ipo.ofs_cr) }} Cr</td></tr>{% endif %}
+      {% if evidence.ipo.sale_type %}<tr><td>Sale type</td><td>{{ evidence.ipo.sale_type }}</td></tr>{% endif %}
+      {% if evidence.ipo.exchanges %}<tr><td>Exchanges</td><td>{{ evidence.ipo.exchanges|join(', ') }}</td></tr>{% endif %}
+      {% if evidence.ipo.registrar %}<tr><td>Registrar</td><td>{{ evidence.ipo.registrar }}</td></tr>{% endif %}
+      <tr><td>GMP</td><td>{% if evidence.ipo.gmp.price is not none %}Rs. {{ evidence.ipo.gmp.price }}{% if evidence.ipo.gmp.percentage is not none %} ({{ evidence.ipo.gmp.percentage }}%){% endif %}{% else %}Not available{% endif %}</td></tr>
+      <tr><td>Subscription</td><td>{% if evidence.ipo.subscription.total is not none %}Total {{ evidence.ipo.subscription.total }}x{% if evidence.ipo.subscription.qib is not none %}, QIB {{ evidence.ipo.subscription.qib }}x{% endif %}{% if evidence.ipo.subscription.nii is not none %}, NII {{ evidence.ipo.subscription.nii }}x{% endif %}{% if evidence.ipo.subscription.retail is not none %}, Retail {{ evidence.ipo.subscription.retail }}x{% endif %}{% else %}Not available{% endif %}</td></tr>
+    </tbody>
+  </table>
+
+  {% if evidence.calculated_metrics %}
+  <h3>Calculated Metrics</h3>
+  <table class="metric-table">
+    <tbody>
+      {% if evidence.calculated_metrics.revenue_cagr_pct is not none %}<tr><td>Revenue CAGR</td><td>{{ "%.2f"|format(evidence.calculated_metrics.revenue_cagr_pct) }}%</td></tr>{% endif %}
+      {% if evidence.calculated_metrics.pat_cagr_pct is not none %}<tr><td>PAT CAGR</td><td>{{ "%.2f"|format(evidence.calculated_metrics.pat_cagr_pct) }}%</td></tr>{% endif %}
+      {% if evidence.calculated_metrics.latest_ebitda_margin_pct is not none %}<tr><td>Latest EBITDA margin</td><td>{{ "%.2f"|format(evidence.calculated_metrics.latest_ebitda_margin_pct) }}%</td></tr>{% endif %}
+      {% if evidence.calculated_metrics.latest_pat_margin_pct is not none %}<tr><td>Latest PAT margin</td><td>{{ "%.2f"|format(evidence.calculated_metrics.latest_pat_margin_pct) }}%</td></tr>{% endif %}
+      {% if evidence.calculated_metrics.latest_cfo_pat_ratio is not none %}<tr><td>Latest CFO/PAT ratio</td><td>{{ "%.2f"|format(evidence.calculated_metrics.latest_cfo_pat_ratio) }}</td></tr>{% endif %}
+      {% if evidence.calculated_metrics.latest_debt_equity_ratio is not none %}<tr><td>Latest debt/equity</td><td>{{ "%.2f"|format(evidence.calculated_metrics.latest_debt_equity_ratio) }}</td></tr>{% endif %}
+      {% if evidence.calculated_metrics.fresh_issue_pct is not none %}<tr><td>Fresh issue share</td><td>{{ "%.2f"|format(evidence.calculated_metrics.fresh_issue_pct) }}%</td></tr>{% endif %}
+      {% if evidence.calculated_metrics.ofs_pct is not none %}<tr><td>OFS share</td><td>{{ "%.2f"|format(evidence.calculated_metrics.ofs_pct) }}%</td></tr>{% endif %}
+      {% if evidence.calculated_metrics.minimum_investment_rupees is not none %}<tr><td>Minimum investment</td><td>Rs. {{ "%.2f"|format(evidence.calculated_metrics.minimum_investment_rupees) }}</td></tr>{% endif %}
+    </tbody>
+  </table>
+  {% endif %}
+
+  {% if evidence.financials %}
+  <h3>Extracted Financial Rows</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Period</th>
+        <th>Revenue</th>
+        <th>EBITDA</th>
+        <th>PAT</th>
+        <th>CFO</th>
+        <th>Debt</th>
+        <th>Equity</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in evidence.financials %}
+      <tr>
+        <td>{{ row.period }}</td>
+        <td>{{ row.revenue_cr if row.revenue_cr is not none else '-' }}</td>
+        <td>{{ row.ebitda_cr if row.ebitda_cr is not none else '-' }}</td>
+        <td>{{ row.pat_cr if row.pat_cr is not none else '-' }}</td>
+        <td>{{ row.operating_cash_flow_cr if row.operating_cash_flow_cr is not none else '-' }}</td>
+        <td>{{ row.debt_cr if row.debt_cr is not none else '-' }}</td>
+        <td>{{ row.equity_cr if row.equity_cr is not none else '-' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+
+  {% if evidence.news_events %}
+  <h3>Selected News Events</h3>
+  {% for event in evidence.news_events %}
+    <div class="news-item">
+      <strong>{{ event.title }}</strong>
+      <div class="muted small">
+        {{ event.event_type }} | {{ event.materiality }} | score {{ event.score }}
+        {% if event.published_at %} | {{ event.published_at }}{% endif %}
+        {% if event.source_name %} | {{ event.source_name }}{% endif %}
+      </div>
+      {% if event.summary %}<div>{{ event.summary }}</div>{% endif %}
+      {% if event.source_url %}<a class="source-link" href="{{ event.source_url }}">{{ event.source_url }}</a>{% endif %}
+    </div>
+  {% endfor %}
+  {% endif %}
+
+  {% if evidence.rhp_sections %}
+  <h3>Extracted RHP Sections</h3>
+  {% for section in evidence.rhp_sections %}
+    <h3>{{ section.id }} - {{ section.title }}</h3>
+    {% if section.start_page %}<div class="muted small">RHP pages {{ section.start_page }}{% if section.end_page %}-{{ section.end_page }}{% endif %}</div>{% endif %}
+    <div class="evidence-text">{{ section.text }}</div>
+  {% endfor %}
+  {% endif %}
+
+  <h2>Sources</h2>
+  <div class="sources">
+    {% for source in evidence.sources %}
+      <div class="source-row">
+        <strong>{{ source.id }}</strong> - {{ source.title }}
+        [{{ source.source_type }}, confidence {{ source.confidence.value }}]
+        {% if source.published_at %}<br><span class="muted">As of: {{ source.published_at }}</span>{% endif %}
+        {% if source.url %}<br><a class="source-link" href="{{ source.url }}">{{ source.url }}</a>{% endif %}
+      </div>
+    {% endfor %}
+    {% for section in evidence.rhp_sections %}
+      <div class="source-row">
+        <strong>{{ section.id }}</strong> - {{ section.title }}
+        {% if section.start_page %}<span class="muted">(RHP pages {{ section.start_page }}{% if section.end_page %}-{{ section.end_page }}{% endif %})</span>{% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="disclaimer">
+    This is research synthesis for educational purposes, not personalized investment advice. IPOs and stocks involve risk. Read the full RHP and consider consulting a SEBI-registered financial advisor before investing.
+  </div>
+</body>
+</html>
