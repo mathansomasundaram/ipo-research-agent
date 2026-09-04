@@ -7,6 +7,12 @@
       "confidence": "MEDIUM",
       "evidence_hash": "966b62d484c7c8925868b4f5f0cd85acb267f2813d517ea0ef7dafb5163e8279",
       "report_file": "2026-08-31_purple-style-labs-limited.pdf"
+    },
+    "pranav-constructions-limited_2026-09-07": {
+      "status": "FAILED",
+      "updated_at": "2026-09-04T16:32:24.810258+00:00",
+      "stage": "ANALYSIS_VALIDATION",
+      "error": "Analysis validation failed: Section 'Revenue and Profit Drivers' cites unknown evidence IDs: ['data_gaps'] | Section 'Cons' cites unknown evidence IDs: ['data_gaps'] | Section 'Data Gaps' cites unknown evidence IDs: ['data_gaps']"
     }
   }
 }
