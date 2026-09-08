@@ -35,6 +35,46 @@
       "confidence": "MEDIUM",
       "evidence_hash": "82e6f548034c3d74750ee5b0f2d813090ef3bb1e415503a77d8c570a34abb42a",
       "report_file": "2026-09-08_prasol-chemicals-limited.pdf"
+    },
+    "karamtara-engineering-limited_2026-09-09": {
+      "status": "FAILED",
+      "updated_at": "2026-09-08T16:47:34.161386+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned an empty analysis response (model=dots-studio/dots-3-note-preview:free; finish_reason=length)"
+    },
+    "asset-reconstruction-company-india-limited_2026-09-09": {
+      "status": "FAILED",
+      "updated_at": "2026-09-08T16:47:34.161386+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned an empty analysis response (model=dots-studio/dots-3-note-preview:free; finish_reason=length)"
+    },
+    "steamhouse-india-limited_2026-09-09": {
+      "status": "FAILED",
+      "updated_at": "2026-09-08T16:47:34.161386+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned an empty analysis response (model=dots-studio/dots-3-note-preview:free; finish_reason=length)"
+    },
+    "manipal-payment-and-identity-solutions-limited_2026-09-09": {
+      "status": "FAILED",
+      "updated_at": "2026-09-08T16:47:34.161386+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter response failed strict validation: 'choices'"
+    },
+    "rentomojo-limited_2026-09-09": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-08T16:47:34.161386+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "6c9dfc85b70606980be9caded41232b131258838df93bba9ae2740aae21afe5a",
+      "report_file": "2026-09-09_rentomojo-limited.pdf"
+    },
+    "lcc-projects-limited_2026-09-09": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-08T16:47:34.161386+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "77221a559cb3a39168df7ca9946d961322799db445ff9530f886dd373735602d",
+      "report_file": "2026-09-09_lcc-projects-limited.pdf"
     }
   }
 }
