@@ -75,6 +75,12 @@
       "confidence": "MEDIUM",
       "evidence_hash": "77221a559cb3a39168df7ca9946d961322799db445ff9530f886dd373735602d",
       "report_file": "2026-09-09_lcc-projects-limited.pdf"
+    },
+    "veegaland-developers-limited_2026-09-10": {
+      "status": "FAILED",
+      "updated_at": "2026-09-09T16:49:53.743621+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":10},{\"step\":\"Gate Free Endpoints by Agentic Harness\",\"endpoint_count\":9}],\"failed_routing_step\":\"Filter by Parameters\"}}}"
     }
   }
 }
