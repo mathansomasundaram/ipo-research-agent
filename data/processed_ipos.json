@@ -81,6 +81,12 @@
       "updated_at": "2026-09-09T16:49:53.743621+00:00",
       "stage": "LLM_ANALYSIS",
       "error": "OpenRouter returned HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":10},{\"step\":\"Gate Free Endpoints by Agentic Harness\",\"endpoint_count\":9}],\"failed_routing_step\":\"Filter by Parameters\"}}}"
+    },
+    "manika-plastech-limited_2026-09-11": {
+      "status": "FAILED",
+      "updated_at": "2026-09-10T16:36:14.260993+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned an empty analysis response (model=nex-agi/nex-n2.5-pro:free; finish_reason=length)"
     }
   }
 }
