@@ -79,6 +79,24 @@
       "updated_at": "2026-09-10T16:36:14.260993+00:00",
       "stage": "LLM_ANALYSIS",
       "error": "OpenRouter returned an empty analysis response (model=nex-agi/nex-n2.5-pro:free; finish_reason=length)"
+    },
+    "ss-retail-limited_2026-09-16": {
+      "status": "FAILED",
+      "updated_at": "2026-09-15T17:12:07.815034+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned an empty analysis response (model=nex-agi/nex-n2.5-mini:free; finish_reason=length)"
+    },
+    "hero-motors-limited_2026-09-16": {
+      "status": "FAILED",
+      "updated_at": "2026-09-15T17:12:07.815034+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned an empty analysis response (model=nex-agi/nex-n2.5-mini:free; finish_reason=length)"
+    },
+    "jindal-supreme-india-limited_2026-09-16": {
+      "status": "FAILED",
+      "updated_at": "2026-09-15T17:12:07.815034+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter response failed strict validation: 8 validation errors for IPOAnalysis company_name   Field required [type=missing, input_value={'biggest_reason_to_be_ca... debt) is missing from'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing verdict   Field required [type=missing, input_value={'biggest_reason_to_be_ca... debt) is missing from'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing confidence   Field required [type=missing, input_value={'biggest_reason_to_be_ca... debt) is missing from'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing verdict_re"
     }
   }
 }
