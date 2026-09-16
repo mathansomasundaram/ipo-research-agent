@@ -97,6 +97,20 @@
       "updated_at": "2026-09-15T17:12:07.815034+00:00",
       "stage": "LLM_ANALYSIS",
       "error": "OpenRouter response failed strict validation: 8 validation errors for IPOAnalysis company_name   Field required [type=missing, input_value={'biggest_reason_to_be_ca... debt) is missing from'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing verdict   Field required [type=missing, input_value={'biggest_reason_to_be_ca... debt) is missing from'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing confidence   Field required [type=missing, input_value={'biggest_reason_to_be_ca... debt) is missing from'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing verdict_re"
+    },
+    "national-stock-exchange-of-india-limited_2026-09-17": {
+      "status": "FAILED",
+      "updated_at": "2026-09-16T17:13:13.284830+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned an empty analysis response (model=dots-studio/dots-3-note-preview:free; finish_reason=length)"
+    },
+    "sonaselection-india-limited_2026-09-17": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-16T17:13:13.284830+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "e9cc85218a84a3a9946063a8a75c792a6082724f08f01b01107baa1da5c9033e",
+      "report_file": "2026-09-17_sonaselection-india-limited.pdf"
     }
   }
 }
