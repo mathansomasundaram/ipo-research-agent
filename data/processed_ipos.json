@@ -1,13 +1,5 @@
 {
   "processed": {
-    "pranav-constructions-limited_2026-09-07": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-09-05T15:27:29.000239+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "LOW",
-      "evidence_hash": "64d6db40e9e1bb1ea3f81917d0d61844c6bebdadb42089a49a338c06f09d5f64",
-      "report_file": "2026-09-07_pranav-constructions-limited.pdf"
-    },
     "glass-wall-systems-india-limited_2026-09-08": {
       "status": "FAILED",
       "updated_at": "2026-09-07T17:50:48.965598+00:00",
