@@ -109,6 +109,34 @@
       "updated_at": "2026-09-21T18:16:56.161131+00:00",
       "stage": "LLM_ANALYSIS",
       "error": "OpenRouter returned an empty analysis response (model=nex-agi/nex-n2.5-mini:free; finish_reason=length)"
+    },
+    "swastika-infra-limited_2026-09-23": {
+      "status": "FAILED",
+      "updated_at": "2026-09-22T17:09:42.686666+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned an empty analysis response (model=nex-agi/nex-n2.5-mini:free; finish_reason=length)"
+    },
+    "elevate-campuses-limited_2026-09-23": {
+      "status": "FAILED",
+      "updated_at": "2026-09-22T17:09:42.686666+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned an empty analysis response (model=nex-agi/nex-n2.5-mini:free; finish_reason=length)"
+    },
+    "adroit-industries-india-limited_2026-09-23": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-22T17:09:42.686666+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "28c1336e1f25c7c5a722f435ac7b1e702af9a62e4b8da1afbdaa9a3d44f87a99",
+      "report_file": "2026-09-23_adroit-industries-india-limited.pdf"
+    },
+    "armee-infotech-limited_2026-09-23": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-22T17:09:42.686666+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "36a8c8a8b319a5d84821cf04327d0f0e93fd77991aed88f5cd33493d6b9db554",
+      "report_file": "2026-09-23_armee-infotech-limited.pdf"
     }
   }
 }
