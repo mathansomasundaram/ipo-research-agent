@@ -1,65 +1,5 @@
 {
   "processed": {
-    "glass-wall-systems-india-limited_2026-09-08": {
-      "status": "FAILED",
-      "updated_at": "2026-09-07T17:50:48.965598+00:00",
-      "stage": "LLM_ANALYSIS",
-      "error": "OpenRouter returned an empty analysis response (model=dots-studio/dots-3-note-preview:free; finish_reason=length)"
-    },
-    "kanohar-electricals-limited_2026-09-08": {
-      "status": "FAILED",
-      "updated_at": "2026-09-07T17:50:48.965598+00:00",
-      "stage": "LLM_ANALYSIS",
-      "error": "OpenRouter returned an empty analysis response (model=dots-studio/dots-3-note-preview:free; finish_reason=length)"
-    },
-    "prasol-chemicals-limited_2026-09-08": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-09-07T17:50:48.965598+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "82e6f548034c3d74750ee5b0f2d813090ef3bb1e415503a77d8c570a34abb42a",
-      "report_file": "2026-09-08_prasol-chemicals-limited.pdf"
-    },
-    "karamtara-engineering-limited_2026-09-09": {
-      "status": "FAILED",
-      "updated_at": "2026-09-08T16:47:34.161386+00:00",
-      "stage": "LLM_ANALYSIS",
-      "error": "OpenRouter returned an empty analysis response (model=dots-studio/dots-3-note-preview:free; finish_reason=length)"
-    },
-    "asset-reconstruction-company-india-limited_2026-09-09": {
-      "status": "FAILED",
-      "updated_at": "2026-09-08T16:47:34.161386+00:00",
-      "stage": "LLM_ANALYSIS",
-      "error": "OpenRouter returned an empty analysis response (model=dots-studio/dots-3-note-preview:free; finish_reason=length)"
-    },
-    "steamhouse-india-limited_2026-09-09": {
-      "status": "FAILED",
-      "updated_at": "2026-09-08T16:47:34.161386+00:00",
-      "stage": "LLM_ANALYSIS",
-      "error": "OpenRouter returned an empty analysis response (model=dots-studio/dots-3-note-preview:free; finish_reason=length)"
-    },
-    "manipal-payment-and-identity-solutions-limited_2026-09-09": {
-      "status": "FAILED",
-      "updated_at": "2026-09-08T16:47:34.161386+00:00",
-      "stage": "LLM_ANALYSIS",
-      "error": "OpenRouter response failed strict validation: 'choices'"
-    },
-    "rentomojo-limited_2026-09-09": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-09-08T16:47:34.161386+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "6c9dfc85b70606980be9caded41232b131258838df93bba9ae2740aae21afe5a",
-      "report_file": "2026-09-09_rentomojo-limited.pdf"
-    },
-    "lcc-projects-limited_2026-09-09": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-09-08T16:47:34.161386+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "77221a559cb3a39168df7ca9946d961322799db445ff9530f886dd373735602d",
-      "report_file": "2026-09-09_lcc-projects-limited.pdf"
-    },
     "veegaland-developers-limited_2026-09-10": {
       "status": "FAILED",
       "updated_at": "2026-09-09T16:49:53.743621+00:00",
@@ -137,6 +77,20 @@
       "confidence": "MEDIUM",
       "evidence_hash": "36a8c8a8b319a5d84821cf04327d0f0e93fd77991aed88f5cd33493d6b9db554",
       "report_file": "2026-09-23_armee-infotech-limited.pdf"
+    },
+    "a-one-steels-india-limited_2026-09-24": {
+      "status": "FAILED",
+      "updated_at": "2026-09-23T17:22:16.044699+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter response failed strict validation: 14 validation errors for IPOAnalysis verdict   Field required [type=missing, input_value={'company_name': 'A-One S...Verdict: DEEP ANALYSE.'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing verdict_reasons   Field required [type=missing, input_value={'company_name': 'A-One S...Verdict: DEEP ANALYSE.'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing scorecard   Input should be a valid dictionary or instance of Scorecard [type=model_type, input_value='{\"completionState\":\"comp...VE\"}]],\"type\":\"Object\"}', input_type=str]     For further information visit htt"
+    },
+    "moneyview-limited_2026-09-24": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-23T17:22:16.044699+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "d79e729217512e7ce99f3ca0858949c76178e4662f1690b3e92e9a80992c109d",
+      "report_file": "2026-09-24_moneyview-limited.pdf"
     }
   }
 }
