@@ -1,11 +1,5 @@
 {
   "processed": {
-    "veegaland-developers-limited_2026-09-10": {
-      "status": "FAILED",
-      "updated_at": "2026-09-09T16:49:53.743621+00:00",
-      "stage": "LLM_ANALYSIS",
-      "error": "OpenRouter returned HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":10},{\"step\":\"Gate Free Endpoints by Agentic Harness\",\"endpoint_count\":9}],\"failed_routing_step\":\"Filter by Parameters\"}}}"
-    },
     "manika-plastech-limited_2026-09-11": {
       "status": "FAILED",
       "updated_at": "2026-09-10T16:36:14.260993+00:00",
@@ -91,6 +85,34 @@
       "confidence": "MEDIUM",
       "evidence_hash": "d79e729217512e7ce99f3ca0858949c76178e4662f1690b3e92e9a80992c109d",
       "report_file": "2026-09-24_moneyview-limited.pdf"
+    },
+    "orient-cables-india-limited_2026-09-25": {
+      "status": "FAILED",
+      "updated_at": "2026-09-24T17:27:26.130349+00:00",
+      "stage": "ANALYSIS_VALIDATION",
+      "error": "Analysis validation failed: Section 'Market Sentiment' cites unknown evidence IDs: ['EVENT-003', 'EVENT-006', 'EVENT-015']"
+    },
+    "german-green-steel-and-power-limited_2026-09-25": {
+      "status": "FAILED",
+      "updated_at": "2026-09-24T17:27:26.130349+00:00",
+      "stage": "ANALYSIS_VALIDATION",
+      "error": "Analysis validation failed: Section 'Where Does the Money Actually Come From?' cites unknown evidence IDs: ['financials'] | Section 'Financial Health' cites unknown evidence IDs: ['calculated_metrics', 'financials'] | Section 'Is the Profit Real Cash?' cites unknown evidence IDs: ['financials'] | Section 'Recent Problems or Important Developments' cites unknown evidence IDs: ['EVENT-001', 'EVENT-008'] | Section 'Important Red Flags' cites unknown evidence IDs: ['financials'] | Section 'Current Market Sentiment' cites unknown evidence IDs: ['EVENT-008'] | Section 'Pros' cites unknown evidence IDs: ['EVENT-008', 'financials'] | Section 'Cons' cites unknown evidence IDs: ['financials'] | Sectio"
+    },
+    "runwal-enterprises-limited_2026-09-25": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-24T17:27:26.130349+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "5878d09d43c09c3319742555d7e0a19124ff2cf0633cf3bcdc8a5d0f21040277",
+      "report_file": "2026-09-25_runwal-enterprises-limited.pdf"
+    },
+    "acevector-limited_2026-09-25": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-24T17:27:26.130349+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "a3d5ab4a7416a78c5eee831610e1289a801b45f96fc940f9265518d2deefd2c4",
+      "report_file": "2026-09-25_acevector-limited.pdf"
     }
   }
 }
