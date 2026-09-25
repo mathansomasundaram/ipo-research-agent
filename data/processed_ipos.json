@@ -1,11 +1,5 @@
 {
   "processed": {
-    "manika-plastech-limited_2026-09-11": {
-      "status": "FAILED",
-      "updated_at": "2026-09-10T16:36:14.260993+00:00",
-      "stage": "LLM_ANALYSIS",
-      "error": "OpenRouter returned an empty analysis response (model=nex-agi/nex-n2.5-pro:free; finish_reason=length)"
-    },
     "ss-retail-limited_2026-09-16": {
       "status": "FAILED",
       "updated_at": "2026-09-15T17:12:07.815034+00:00",
@@ -113,6 +107,22 @@
       "confidence": "MEDIUM",
       "evidence_hash": "a3d5ab4a7416a78c5eee831610e1289a801b45f96fc940f9265518d2deefd2c4",
       "report_file": "2026-09-25_acevector-limited.pdf"
+    },
+    "srit-india-limited_2026-09-28": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-25T17:26:08.267862+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "b50e71e2cbf7ef6c4220de01ecde08eb867edafca0593f75204f63b8a66c1df0",
+      "report_file": "2026-09-28_srit-india-limited.pdf"
+    },
+    "shah-investor-s-home-limited_2026-09-28": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-25T17:26:08.267862+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "0d59e9c283bbbba6665bfa2363a2023a308f98bda759e3790d3b054b296c4b81",
+      "report_file": "2026-09-28_shah-investor-s-home-limited.pdf"
     }
   }
 }
