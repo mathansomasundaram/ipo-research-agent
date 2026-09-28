@@ -123,6 +123,12 @@
       "confidence": "MEDIUM",
       "evidence_hash": "0d59e9c283bbbba6665bfa2363a2023a308f98bda759e3790d3b054b296c4b81",
       "report_file": "2026-09-28_shah-investor-s-home-limited.pdf"
+    },
+    "vishal-nirmiti-limited_2026-09-30": {
+      "status": "FAILED",
+      "updated_at": "2026-09-28T19:47:32.350565+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter JSON response was invalid (model=nvidia/nemotron-3-super-120b-a12b:free; finish_reason=length; preview={ {   \"company_name\": \"Vishal Nirmiti Limited\",   \"verdict\": \"DEEP ANALYSE\",   \"confidence\": \"MEDIUM\",   \"verdict_reasons\": [     \"Revenue and profit have shown strong growth with improving margins.\",     \"Debt levels have decreased significantly and return ratios are healthy.\",     \"Fresh issue proceeds are earmarked for working capital and debt repayment, which improves the balance sheet.\",     \"The offer for sale involves a sizable promoter stake sale without disclosed reasons, raising concer)"
     }
   }
 }
