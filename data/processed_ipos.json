@@ -125,10 +125,18 @@
       "report_file": "2026-09-28_shah-investor-s-home-limited.pdf"
     },
     "vishal-nirmiti-limited_2026-09-30": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-09-29T18:12:29.009659+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "9eeef4c4eed4f99e3c894b3d6262535187c812e948469a17be5c9aba70952d57",
+      "report_file": "2026-09-30_vishal-nirmiti-limited.pdf"
+    },
+    "nityas-gems-and-jewellery-limited_2026-09-30": {
       "status": "FAILED",
-      "updated_at": "2026-09-28T19:47:32.350565+00:00",
+      "updated_at": "2026-09-29T18:12:29.009659+00:00",
       "stage": "LLM_ANALYSIS",
-      "error": "OpenRouter JSON response was invalid (model=nvidia/nemotron-3-super-120b-a12b:free; finish_reason=length; preview={ {   \"company_name\": \"Vishal Nirmiti Limited\",   \"verdict\": \"DEEP ANALYSE\",   \"confidence\": \"MEDIUM\",   \"verdict_reasons\": [     \"Revenue and profit have shown strong growth with improving margins.\",     \"Debt levels have decreased significantly and return ratios are healthy.\",     \"Fresh issue proceeds are earmarked for working capital and debt repayment, which improves the balance sheet.\",     \"The offer for sale involves a sizable promoter stake sale without disclosed reasons, raising concer)"
+      "error": "OpenRouter response failed strict validation: 4 validation errors for IPOAnalysis verdict   Field required [type=missing, input_value={'company_name': 'Nityas ...customer concentration'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing verdict_reasons   Field required [type=missing, input_value={'company_name': 'Nityas ...customer concentration'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing scorecard   Field required [type=missing, input_value={'company_name': 'Nityas ...customer concentration'}, input_type=dict]     For further information visit https://errors.pydantic.dev/2.13/v/missing what_cou"
     }
   }
 }
