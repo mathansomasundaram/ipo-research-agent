@@ -108,7 +108,7 @@
     },
     "smc-global-securities-limited_2026-10-05": {
       "status": "FAILED",
-      "updated_at": "2026-10-01T18:32:07.412294+00:00",
+      "updated_at": "2026-10-02T17:58:48.574041+00:00",
       "stage": "EVIDENCE_COLLECTION",
       "error": "Unable to download a usable RHP/DRHP from official/provider candidates. https://nsearchives.nseindia.com/content/ipo/RHP_SMCG04.zip: 404 Client Error: Not Found for url: https://nsearchives.nseindia.com/content/ipo/RHP_SMCG04.zip | https://nsearchives.nseindia.com/content/ipo/RHP_SMCG04.pdf: 404 Client Error: Not Found for url: https://nsearchives.nseindia.com/content/ipo/RHP_SMCG04.pdf | https://nsearchives.nseindia.com/content/ipo/DRHP_SMCG04.zip: 404 Client Error: Not Found for url: https://nsearchives.nseindia.com/content/ipo/DRHP_SMCG04.zip"
     }
