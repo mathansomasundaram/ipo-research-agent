@@ -1,11 +1,5 @@
 {
   "processed": {
-    "varmora-granito-limited_2026-09-22": {
-      "status": "FAILED",
-      "updated_at": "2026-09-21T18:16:56.161131+00:00",
-      "stage": "LLM_ANALYSIS",
-      "error": "OpenRouter returned an empty analysis response (model=nex-agi/nex-n2.5-mini:free; finish_reason=length)"
-    },
     "swastika-infra-limited_2026-09-23": {
       "status": "FAILED",
       "updated_at": "2026-09-22T17:09:42.686666+00:00",
