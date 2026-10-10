@@ -1,33 +1,5 @@
 {
   "processed": {
-    "orient-cables-india-limited_2026-09-25": {
-      "status": "FAILED",
-      "updated_at": "2026-09-24T17:27:26.130349+00:00",
-      "stage": "ANALYSIS_VALIDATION",
-      "error": "Analysis validation failed: Section 'Market Sentiment' cites unknown evidence IDs: ['EVENT-003', 'EVENT-006', 'EVENT-015']"
-    },
-    "german-green-steel-and-power-limited_2026-09-25": {
-      "status": "FAILED",
-      "updated_at": "2026-09-24T17:27:26.130349+00:00",
-      "stage": "ANALYSIS_VALIDATION",
-      "error": "Analysis validation failed: Section 'Where Does the Money Actually Come From?' cites unknown evidence IDs: ['financials'] | Section 'Financial Health' cites unknown evidence IDs: ['calculated_metrics', 'financials'] | Section 'Is the Profit Real Cash?' cites unknown evidence IDs: ['financials'] | Section 'Recent Problems or Important Developments' cites unknown evidence IDs: ['EVENT-001', 'EVENT-008'] | Section 'Important Red Flags' cites unknown evidence IDs: ['financials'] | Section 'Current Market Sentiment' cites unknown evidence IDs: ['EVENT-008'] | Section 'Pros' cites unknown evidence IDs: ['EVENT-008', 'financials'] | Section 'Cons' cites unknown evidence IDs: ['financials'] | Sectio"
-    },
-    "runwal-enterprises-limited_2026-09-25": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-09-24T17:27:26.130349+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "5878d09d43c09c3319742555d7e0a19124ff2cf0633cf3bcdc8a5d0f21040277",
-      "report_file": "2026-09-25_runwal-enterprises-limited.pdf"
-    },
-    "acevector-limited_2026-09-25": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-09-24T17:27:26.130349+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "a3d5ab4a7416a78c5eee831610e1289a801b45f96fc940f9265518d2deefd2c4",
-      "report_file": "2026-09-25_acevector-limited.pdf"
-    },
     "srit-india-limited_2026-09-28": {
       "status": "EMAIL_SENT",
       "updated_at": "2026-09-25T17:26:08.267862+00:00",
