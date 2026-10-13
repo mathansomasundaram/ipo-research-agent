@@ -25,6 +25,32 @@
       "updated_at": "2026-10-12T21:21:57.824231+00:00",
       "stage": "ANALYSIS_VALIDATION",
       "error": "Analysis validation failed: Section 'IPO Details' cites unknown evidence IDs: ['exchange_verification'] | Section 'Is the Profit Real Cash?' cites unknown evidence IDs: ['financials']"
+    },
+    "sahajanand-medical-technologies-limited_2026-10-15": {
+      "status": "FAILED",
+      "updated_at": "2026-10-13T19:27:09.770891+00:00",
+      "stage": "ANALYSIS_VALIDATION",
+      "error": "Analysis validation failed: Section 'Management & Governance' cites unknown evidence IDs: ['EVENT-002', 'EVENT-009', 'EVENT-010'] | Section 'Market Sentiment' cites unknown evidence IDs: ['EVENT-002', 'EVENT-008', 'EVENT-009', 'EVENT-010']"
+    },
+    "zetwerk-manufacturing-businesses-limited_2026-10-15": {
+      "status": "FAILED",
+      "updated_at": "2026-10-13T19:27:09.770891+00:00",
+      "stage": "ANALYSIS_VALIDATION",
+      "error": "Analysis validation failed: Section 'Financial Health' cites unknown evidence IDs: ['financials'] | Section 'Important Red Flags' cites unknown evidence IDs: ['financials'] | Section 'Current Market Sentiment' cites unknown evidence IDs: ['financials']"
+    },
+    "tonbo-imaging-india-limited_2026-10-15": {
+      "status": "FAILED",
+      "updated_at": "2026-10-13T19:27:09.770891+00:00",
+      "stage": "ANALYSIS_VALIDATION",
+      "error": "Analysis validation failed: Section 'Financial Performance' cites unknown evidence IDs: ['calculated_metrics', 'financials'] | Section 'Recent Developments' cites unknown evidence IDs: ['EVENT-006', 'EVENT-007', 'EVENT-008', 'EVENT-012', 'EVENT-016'] | Section 'Valuation (Indicative)' cites unknown evidence IDs: ['calculated_metrics', 'financials'] | Section 'Market Sentiment' cites unknown evidence IDs: ['EVENT-006', 'EVENT-012', 'EVENT-016'] | Section 'Pros' cites unknown evidence IDs: ['EVENT-007', 'EVENT-008'] | Section 'Cons' cites unknown evidence IDs: ['calculated_metrics', 'financials'] | Section 'Final Summary' cites unknown evidence IDs: ['EVENT-007', 'EVENT-008', 'calculated_metri"
+    },
+    "bonfiglioli-transmissions-limited_2026-10-15": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-10-13T19:27:09.770891+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "e88eb12f601779637a9fb3d84575a8bdc41edf9714782aa020ce2eac051f467e",
+      "report_file": "2026-10-15_bonfiglioli-transmissions-limited.pdf"
     }
   }
 }
