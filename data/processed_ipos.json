@@ -27,22 +27,28 @@
       "error": "Analysis validation failed: Section 'IPO Details' cites unknown evidence IDs: ['exchange_verification'] | Section 'Is the Profit Real Cash?' cites unknown evidence IDs: ['financials']"
     },
     "sahajanand-medical-technologies-limited_2026-10-15": {
-      "status": "FAILED",
-      "updated_at": "2026-10-13T19:27:09.770891+00:00",
-      "stage": "ANALYSIS_VALIDATION",
-      "error": "Analysis validation failed: Section 'Management & Governance' cites unknown evidence IDs: ['EVENT-002', 'EVENT-009', 'EVENT-010'] | Section 'Market Sentiment' cites unknown evidence IDs: ['EVENT-002', 'EVENT-008', 'EVENT-009', 'EVENT-010']"
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-10-14T17:28:09.200835+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "2d7ed8e2c3d0ad4f206cb4700b133e387f3be0bb9828b90831a6ffb70355e0ca",
+      "report_file": "2026-10-15_sahajanand-medical-technologies-limited.pdf"
     },
     "zetwerk-manufacturing-businesses-limited_2026-10-15": {
-      "status": "FAILED",
-      "updated_at": "2026-10-13T19:27:09.770891+00:00",
-      "stage": "ANALYSIS_VALIDATION",
-      "error": "Analysis validation failed: Section 'Financial Health' cites unknown evidence IDs: ['financials'] | Section 'Important Red Flags' cites unknown evidence IDs: ['financials'] | Section 'Current Market Sentiment' cites unknown evidence IDs: ['financials']"
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-10-14T17:28:09.200835+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "2a32e70ec1993083a08f36c7748b4d88ada3cab12042f7039d850d2d6123e3bf",
+      "report_file": "2026-10-15_zetwerk-manufacturing-businesses-limited.pdf"
     },
     "tonbo-imaging-india-limited_2026-10-15": {
-      "status": "FAILED",
-      "updated_at": "2026-10-13T19:27:09.770891+00:00",
-      "stage": "ANALYSIS_VALIDATION",
-      "error": "Analysis validation failed: Section 'Financial Performance' cites unknown evidence IDs: ['calculated_metrics', 'financials'] | Section 'Recent Developments' cites unknown evidence IDs: ['EVENT-006', 'EVENT-007', 'EVENT-008', 'EVENT-012', 'EVENT-016'] | Section 'Valuation (Indicative)' cites unknown evidence IDs: ['calculated_metrics', 'financials'] | Section 'Market Sentiment' cites unknown evidence IDs: ['EVENT-006', 'EVENT-012', 'EVENT-016'] | Section 'Pros' cites unknown evidence IDs: ['EVENT-007', 'EVENT-008'] | Section 'Cons' cites unknown evidence IDs: ['calculated_metrics', 'financials'] | Section 'Final Summary' cites unknown evidence IDs: ['EVENT-007', 'EVENT-008', 'calculated_metri"
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-10-14T17:28:09.200835+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "31bebd34f145905d1d9419fd5cf7734e27e59178c5509102ab1ca09e194fa6a0",
+      "report_file": "2026-10-15_tonbo-imaging-india-limited.pdf"
     },
     "bonfiglioli-transmissions-limited_2026-10-15": {
       "status": "EMAIL_SENT",
