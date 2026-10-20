@@ -39,10 +39,12 @@
       "report_file": "2026-10-15_bonfiglioli-transmissions-limited.pdf"
     },
     "jio-platforms-limited_2026-10-21": {
-      "status": "FAILED",
-      "updated_at": "2026-10-19T18:48:03.838203+00:00",
-      "stage": "ANALYSIS_VALIDATION",
-      "error": "Analysis validation failed: Risk 'Valuation Risk' cites unknown evidence IDs: ['financials']"
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-10-20T17:25:59.182186+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "dd4fe985b81ac02a612f3e667b2294414255d767f81a30aa0af40653c8331e1c",
+      "report_file": "2026-10-21_jio-platforms-limited.pdf"
     },
     "paras-healthcare-limited_2026-10-21": {
       "status": "EMAIL_SENT",
