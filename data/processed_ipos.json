@@ -53,6 +53,14 @@
       "confidence": "MEDIUM",
       "evidence_hash": "c37e351353eaacb85132649ef5904c3e2258c5f1d36e7c9f02e1d0128ed22d71",
       "report_file": "2026-10-21_paras-healthcare-limited.pdf"
+    },
+    "eaaa-india-alternatives-limited_2026-10-26": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-10-23T17:21:39.192353+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "c51c82a8842d2fb46f88d70f01307d49c7452af8eb6693dec0c1a31a38eb636f",
+      "report_file": "2026-10-26_eaaa-india-alternatives-limited.pdf"
     }
   }
 }
