@@ -61,6 +61,12 @@
       "confidence": "MEDIUM",
       "evidence_hash": "c51c82a8842d2fb46f88d70f01307d49c7452af8eb6693dec0c1a31a38eb636f",
       "report_file": "2026-10-26_eaaa-india-alternatives-limited.pdf"
+    },
+    "m-k-sons-fine-jewels-limited_2026-10-28": {
+      "status": "FAILED",
+      "updated_at": "2026-10-26T18:48:51.227649+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned HTTP 404: {\"error\":{\"message\":\"Provider returned error\",\"code\":404,\"metadata\":{\"raw\":\"{\\\"status\\\":404,\\\"title\\\":\\\"Not Found\\\",\\\"detail\\\":\\\"Function 'ac74040f-9fc9-4c5e-ac74-279ba5161d69': Not found for account 'sxpm0VR-knE2_K2__i14ZbzmXEludXpJbFGRvrvc08w'\\\"}\",\"provider_name\":\"Nvidia\",\"is_byok\":false,\"previous_errors\":[{\"code\":429,\"message\":\"Provider returned error\",\"provider_name\":\"Liquid\",\"raw\":\"liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\"},{\"code\":400,\"message\":\"Provider returned error\",\"provider_name\":\"AtlasCloud\",\"raw\":\"{\\\"code\\\":400"
     }
   }
 }
