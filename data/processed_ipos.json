@@ -1,11 +1,5 @@
 {
   "processed": {
-    "fusion-cx-limited_2026-10-14": {
-      "status": "FAILED",
-      "updated_at": "2026-10-12T21:21:57.824231+00:00",
-      "stage": "ANALYSIS_VALIDATION",
-      "error": "Analysis validation failed: Section 'IPO Details' cites unknown evidence IDs: ['exchange_verification'] | Section 'Is the Profit Real Cash?' cites unknown evidence IDs: ['financials']"
-    },
     "sahajanand-medical-technologies-limited_2026-10-15": {
       "status": "EMAIL_SENT",
       "updated_at": "2026-10-14T17:28:09.200835+00:00",
@@ -69,6 +63,14 @@
       "confidence": "MEDIUM",
       "evidence_hash": "eeebb8ab179c3b7c36bc9030e2b17917ec9b14dd8914463824c58f77f570f1c0",
       "report_file": "2026-10-28_m-k-sons-fine-jewels-limited.pdf"
+    },
+    "bombay-coated-and-special-steels-limited_2026-10-29": {
+      "status": "EMAIL_SENT",
+      "updated_at": "2026-10-28T18:26:40.336860+00:00",
+      "verdict": "DEEP ANALYSE",
+      "confidence": "MEDIUM",
+      "evidence_hash": "8c67115357549e06e042d694f051a99f2265151c5f7312b5815d2357b44bbfc8",
+      "report_file": "2026-10-29_bombay-coated-and-special-steels-limited.pdf"
     }
   }
 }
