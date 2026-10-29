@@ -1,37 +1,5 @@
 {
   "processed": {
-    "sahajanand-medical-technologies-limited_2026-10-15": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-10-14T17:28:09.200835+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "2d7ed8e2c3d0ad4f206cb4700b133e387f3be0bb9828b90831a6ffb70355e0ca",
-      "report_file": "2026-10-15_sahajanand-medical-technologies-limited.pdf"
-    },
-    "zetwerk-manufacturing-businesses-limited_2026-10-15": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-10-14T17:28:09.200835+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "2a32e70ec1993083a08f36c7748b4d88ada3cab12042f7039d850d2d6123e3bf",
-      "report_file": "2026-10-15_zetwerk-manufacturing-businesses-limited.pdf"
-    },
-    "tonbo-imaging-india-limited_2026-10-15": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-10-14T17:28:09.200835+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "31bebd34f145905d1d9419fd5cf7734e27e59178c5509102ab1ca09e194fa6a0",
-      "report_file": "2026-10-15_tonbo-imaging-india-limited.pdf"
-    },
-    "bonfiglioli-transmissions-limited_2026-10-15": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-10-13T19:27:09.770891+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "e88eb12f601779637a9fb3d84575a8bdc41edf9714782aa020ce2eac051f467e",
-      "report_file": "2026-10-15_bonfiglioli-transmissions-limited.pdf"
-    },
     "jio-platforms-limited_2026-10-21": {
       "status": "EMAIL_SENT",
       "updated_at": "2026-10-20T17:25:59.182186+00:00",
