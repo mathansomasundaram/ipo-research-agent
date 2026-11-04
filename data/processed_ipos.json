@@ -1,13 +1,5 @@
 {
   "processed": {
-    "jio-platforms-limited_2026-10-21": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-10-20T17:25:59.182186+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "dd4fe985b81ac02a612f3e667b2294414255d767f81a30aa0af40653c8331e1c",
-      "report_file": "2026-10-21_jio-platforms-limited.pdf"
-    },
     "eaaa-india-alternatives-limited_2026-10-26": {
       "status": "EMAIL_SENT",
       "updated_at": "2026-10-23T17:21:39.192353+00:00",
