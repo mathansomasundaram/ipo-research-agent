@@ -1,13 +1,5 @@
 {
   "processed": {
-    "m-k-sons-fine-jewels-limited_2026-10-28": {
-      "status": "EMAIL_SENT",
-      "updated_at": "2026-10-27T18:09:52.733687+00:00",
-      "verdict": "DEEP ANALYSE",
-      "confidence": "MEDIUM",
-      "evidence_hash": "eeebb8ab179c3b7c36bc9030e2b17917ec9b14dd8914463824c58f77f570f1c0",
-      "report_file": "2026-10-28_m-k-sons-fine-jewels-limited.pdf"
-    },
     "bombay-coated-and-special-steels-limited_2026-10-29": {
       "status": "EMAIL_SENT",
       "updated_at": "2026-10-28T18:26:40.336860+00:00",
