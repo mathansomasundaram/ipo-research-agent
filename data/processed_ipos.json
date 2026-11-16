@@ -1,3 +1,10 @@
 {
-  "processed": {}
+  "processed": {
+    "crystal-crop-protection-limited_2026-11-18": {
+      "status": "FAILED",
+      "updated_at": "2026-11-16T22:25:43.393015+00:00",
+      "stage": "LLM_ANALYSIS",
+      "error": "OpenRouter returned an empty analysis response (model=liquid/lfm-3-1.7b:free; finish_reason=length)"
+    }
+  }
 }
